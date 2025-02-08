@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc0cb; /* Pink background */
+    color: #000; /* Black text */
+}
+
+header {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff1493; /* Darker hot pink */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #ff69b4; /* Hot pink border */
+}
+
+footer {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 45%;
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.text-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .text-section, .video-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    .text-section, .video-container {
+        padding: 5px;
+    }
+}
